@@ -17,5 +17,7 @@ Muse 的技能库：把做过的项目、设备和服务写成可复用的操作
 | [lan-iot-scan](lan-iot-scan/SKILL.md) | 局域网与物联网扫描：认设备、健康检查 |
 | [desktop-cleanup](desktop-cleanup/SKILL.md) | 台式机清理维护：卸载 WSA、Android Studio、释放空间 |
 | [github-pat-ops](github-pat-ops/SKILL.md) | GitHub PAT 操作：绕过 GitHub App 权限、打 tag、发版 |
+| [tivimatewin](tivimatewin/SKILL.md) | TiviMateWin 直播播放器：版本发版、实时字幕管线调优、重连行为、云电脑与台式机的测试安装 |
+
 
 每个 skill 目录下有 `SKILL.md`（操作手册）和 `skill.yaml`（元数据）。
