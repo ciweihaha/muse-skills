@@ -16,11 +16,17 @@
 
 - 仓库 `ciweihaha/OrionTV-build`，本地克隆 `~/workspace/oriontv-build`，分支 master，包名 `com.oriontv`。
 
-- 测试用 jest、tsc、eslint、expo export，全部通过才算过。最新发版是 v1.7.6，versionCode 10706，305 个测试。
+- 测试用 jest、tsc、eslint、expo export，全部通过才算过。最新发版是 v1.7.9，versionCode 10709，321 个测试。
 
 - 点播走写死的聚合地址 `https://ysp.ciweihaha.win/agg`，直播默认 `https://live.ciweihaha.win/live.m3u`。应用里没有 vod.json 导入，只有一个 MoonTV 地址栏，配 MoonTV 会弹密码登录框，密码未知，不要去配。
 
 - 平板验证要点：点分类前先用 uiautomator 确认按钮中心坐标，点偏到标题栏会造成零流量误判。点后看选中状态、流量变化和报错内容。报错要看清具体错误种类，不要只报加载失败。
+
+- filters 字典教训（v1.7.8 根因）：服务端 agg 返回的 filters 是按分类 id 分键的字典 `{"1": [...]}`，不是数组；类型声明写成数组，`.filter` 调在对象上会抛 `TypeError: undefined is not a function`。修法：`normalizeAggFilterGroups` 归一化（字典按 t 取组、兜底展平），`filterServerReliableGroups` 非数组返回 `[]`。服务端返回的集合字段不要默认是数组，先看实际形状再写类型。
+
+- ISRG 根插件（v1.7.9）：非百度图床海报在安卓 7.0 平板上不显示——图床证书是 Let's Encrypt，根 ISRG Root X1 只在 Android 7.1.1+ 系统信任库里，7.0 不认，TLS 握手失败；百度是 GlobalSign，7.0 认。修法：Expo 插件 `plugins/withNetworkSecurityConfig.js` 把 ISRG Root X1/X2 打进 APK 网络安全配置（system + 两个 ISRG 根，与新版 Android 信任内容一致，不降低安全）。老安卓上图片不显示时，先查图床证书链的根在不在该版本系统信任库里。
+
+- 重试诊断（v1.7.7–v1.7.8）：重试按钮点按后应用零流量，不一定是接线问题——先看错误屏上的原始错误值；本轮是加载流程里抛错导致重试没走到发请求。诊断标准：读 `/proc/net/xt_qtaguid/stats` 里应用 UID 前台集，点重试前后 rx/tx 对照，零增量就是没发请求。修法：`retryLoad` 硬重载（绕过缓存/同内容提前返回、中断在途加载、直调 `loadMoreData`），错误屏显示原始错误值 `errorDetail`；重试按钮去掉 `hasTVPreferredFocus`（TV 焦点 Pressable 在平板上吞触摸/按键）。
 
 ## OrionTV-native Kotlin 原生版
 
