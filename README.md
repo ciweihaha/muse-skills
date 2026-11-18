@@ -18,6 +18,8 @@ Muse 的技能库：把做过的项目、设备和服务写成可复用的操作
 | [desktop-cleanup](desktop-cleanup/SKILL.md) | 台式机清理维护：卸载 WSA、Android Studio、释放空间 |
 | [github-pat-ops](github-pat-ops/SKILL.md) | GitHub PAT 操作：绕过 GitHub App 权限、打 tag、发版 |
 | [tivimatewin](tivimatewin/SKILL.md) | TiviMateWin 直播播放器：版本发版、实时字幕管线调优、重连行为、云电脑与台式机的测试安装 |
+| [audi-q5-carplay](audi-q5-carplay/SKILL.md) | 奥迪 Q5 CarPlay 刷机：M.I.B. 软刷路线、已验证固件版本、待确认的 MMI 信息 |
+| [muse-gadget-esp32](muse-gadget-esp32/SKILL.md) | Muse Gadget 硬件（ESP32-C5）：刷固件、拿 token、配对 |
 
 
 每个 skill 目录下有 `SKILL.md`（操作手册）和 `skill.yaml`（元数据）。

@@ -1,0 +1,5 @@
+name: "muse-gadget-esp32"
+title: "Muse Gadget 硬件（ESP32-C5）"
+description: "用 ESP32-C5 DevKitC-1 板子做 Muse Gadget：刷 Meta 开源固件、拿 token、配对。"
+category: "Work and knowledge"
+include_in_prompt: false
