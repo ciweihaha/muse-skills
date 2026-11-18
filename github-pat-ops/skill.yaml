@@ -1,0 +1,5 @@
+name: "github-pat-ops"
+title: "GitHub PAT 操作"
+description: "用经典 PAT 助手推代码、打 tag、发版和 fork，绕过 GitHub App 缺少 Workflows 权限的问题。"
+category: "Work and knowledge"
+include_in_prompt: false

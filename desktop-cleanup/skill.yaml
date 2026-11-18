@@ -1,0 +1,5 @@
+name: "desktop-cleanup"
+title: "台式机清理维护"
+description: "卸载台式机上不用的软件和 WSA、模拟器残留，释放空间，同时保住测试要用的工具和平板连接。"
+category: "Work and knowledge"
+include_in_prompt: false

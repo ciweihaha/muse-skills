@@ -1,0 +1,5 @@
+name: "tv-app-build-release"
+title: "电视和电脑应用构建、测试与发版"
+description: "给 OrionTV、FongMi、mytv、UnBox、TiviMateWin 等项目做本地构建、全部测试、升版、打 tag、发版和真机实测。"
+category: "Work and knowledge"
+include_in_prompt: false

@@ -1,0 +1,5 @@
+name: "device-connections"
+title: "连接台式机、云电脑和安卓平板"
+description: "连上用户的三台测试设备（台式机 WinRM、云电脑 WinRM、平板 adb）并排障，照着做就能连上。"
+category: "Work and knowledge"
+include_in_prompt: true

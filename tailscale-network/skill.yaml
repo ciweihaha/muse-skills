@@ -1,0 +1,5 @@
+name: "tailscale-network"
+title: "Tailscale 与网络"
+description: "测 Tailscale 直连和中继延迟，处理路由器 UPnP 和端口转发，判断 DERP 放哪里。"
+category: "Work and knowledge"
+include_in_prompt: false

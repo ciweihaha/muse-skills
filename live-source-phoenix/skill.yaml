@@ -1,0 +1,5 @@
+name: "live-source-phoenix"
+title: "直播源与凤凰秀"
+description: "维护直播 M3U 和腾讯云函数，拿凤凰秀官方源 token，验证流是否真断，处理签名过期。"
+category: "Work and knowledge"
+include_in_prompt: false

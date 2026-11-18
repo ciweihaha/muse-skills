@@ -1,0 +1,5 @@
+name: "live-subtitles-local-model"
+title: "本地小模型实时字幕"
+description: "用 Ollama 和 Whisper 本地小模型给直播做实时英翻中字幕，覆盖 UnBox 和 TiviMateWin。"
+category: "Work and knowledge"
+include_in_prompt: false

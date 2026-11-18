@@ -1,0 +1,5 @@
+name: "auto-release-loop"
+title: "全自动迭代发布循环"
+description: "按用户定的永远循环规则，给电视和电脑项目做审查、修复、发版和实测的一整轮流程。"
+category: "Work and knowledge"
+include_in_prompt: false

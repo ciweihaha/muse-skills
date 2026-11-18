@@ -1,0 +1,5 @@
+name: "lan-iot-scan"
+title: "局域网与物联网扫描"
+description: "扫家里局域网里的设备，认出物联网设备，做健康检查，如实说明哪些能优化、哪些优化不了。"
+category: "Work and knowledge"
+include_in_prompt: false
