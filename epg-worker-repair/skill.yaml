@@ -1,0 +1,5 @@
+name: "epg-worker-repair"
+title: "节目单 EPG 缺台修复"
+description: "ysp.ciweihaha.win 节目单缺台的诊断、手工修补与 ysp-ticket 补抓彻底修复（Cloudflare Worker + KV）。"
+category: "Work and knowledge"
+include_in_prompt: false
