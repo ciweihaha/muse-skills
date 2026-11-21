@@ -1,0 +1,5 @@
+name: "unbox-source-list"
+title: "UnBox 源列表修法"
+description: "UnBox 点播源列表问题的一次完整修法：切源后变空、切不回来的根因、修法与笔记本直验方法。"
+category: "Work and knowledge"
+include_in_prompt: false

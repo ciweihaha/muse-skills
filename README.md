@@ -18,6 +18,7 @@ Muse 的技能库：把做过的项目、设备和服务写成可复用的操作
 | [desktop-cleanup](desktop-cleanup/SKILL.md) | 台式机清理维护：卸载 WSA、Android Studio、释放空间 |
 | [github-pat-ops](github-pat-ops/SKILL.md) | GitHub PAT 操作：绕过 GitHub App 权限、打 tag、发版 |
 | [tivimatewin](tivimatewin/SKILL.md) | TiviMateWin 直播播放器：版本发版、实时字幕管线调优、重连行为、云电脑与台式机的测试安装 |
+| [unbox-source-list](unbox-source-list/SKILL.md) | UnBox 源列表修法：切源后变空、切不回来的根因、修法与笔记本直验方法 |
 | [audi-q5-carplay](audi-q5-carplay/SKILL.md) | 奥迪 Q5 CarPlay 刷机：M.I.B. 软刷路线、已验证固件版本、待确认的 MMI 信息 |
 | [muse-gadget-esp32](muse-gadget-esp32/SKILL.md) | Muse Gadget 硬件（ESP32-C5）：刷固件、拿 token、配对 |
 | [epg-worker-repair](epg-worker-repair/SKILL.md) | 节目单 EPG 缺台修复：诊断、手工修补与 ysp-ticket 补抓彻底修复 |
